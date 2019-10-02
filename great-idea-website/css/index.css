@@ -65,19 +65,23 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+
+/* Stretch Goal, import font, changed footer font */
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
+
 .maxWidth {
 	max-width: 80%;
 	margin: auto;
 	position: relative;
 }
-
+/* Flex Goal, create nav bar */
 .navBar {
 	padding: 20px 0 50px;
 	position: fixed;
 	height: 60px;
 	width: 80%;
 	top: 0;
-	background-color: #EAE7E1;
+	background-color: white;
 	z-index: 999;
 }
 
@@ -93,6 +97,11 @@ h1, h2, h3, h4, h5 {
 	margin-right: 5%;
 	position: relative;
 	top: 10px;
+}
+
+/* Not an animation, just looks a little nicer. */
+nav a:hover {
+	color: black;
 }
 
 header {
@@ -184,4 +193,6 @@ header img {
 footer {
 	text-align: center;
 	margin: 50px 0 100px;
+	/* Flex Goal font change */
+	font-family: "PT Mono", monospace;
 }
